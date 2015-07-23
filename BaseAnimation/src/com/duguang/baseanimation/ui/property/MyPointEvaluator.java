@@ -9,6 +9,6 @@ public class MyPointEvaluator implements TypeEvaluator<PointF> {
 		PointF endPoint = (PointF) endValue;
 		return new PointF(
 				startPoint.x + fraction * (endPoint.x - startPoint.x),
-				startPoint.y + fraction * (endPoint.y - startPoint.x*startPoint.x));
+				startPoint.y + fraction * (endPoint.y - startPoint.y));
 	}
 }
